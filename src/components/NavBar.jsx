@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './NavBar.css'
 import bank from '../bank.png'
 
-function NavBar() {
-    const loadData =  JSON.parse(localStorage.getItem('sharedData'))
+function NavBar(props) {
+    let loadData =  props.account // JSON.parse(localStorage.getItem('sharedData'))
     //const tetherBalance =  JSON.parse(localStorage.getItem('tetherBalance'))
     //const tetherBalance = store.getData("tetherBalance")
     return (
@@ -18,11 +18,12 @@ function NavBar() {
                 <ul className="navbar-nav px-3">
                      <li className="text-nowrap d-none nav-item d-sm-block">
                          <small style={{color:'white'}}>
-                             Account Number: {loadData.account}  {loadData.tetherBalance}
+                             Account Number: {loadData}
                          </small>
                      </li>
                 </ul>
             </nav>
+            <p>Hello</p>
         </>
     );
 }
