@@ -45,7 +45,7 @@ function App() {
                         ...data, // Spread the previous car state
                         account: accounts[0]  // Update the year to 2025
                     }));
-
+                    //console.log(accounts);
 
                     const networkId = await web3Instance.eth.net.getId()
                     //Load Tether Contract
