@@ -45,3 +45,26 @@ Pour compiler truffle
 truffle compile
 truffle migrate --reset --compile-all
 ```
+
+## Pour lancer l'application :
+
+* Lancer la blockchain ganache (Quickstart)
+
+Exécuter la commande 
+
+```
+truffle compile
+truffle migrate --reset
+```
+
+* Copier la clé privé d'un compte virtuel de ganache.
+
+* Importer la clé privé dans MetaMask
+
+* Lancer le serveur avec la commande
+
+```
+npm run dev
+```
+
+* Le site est accessible sur localhost:5173
