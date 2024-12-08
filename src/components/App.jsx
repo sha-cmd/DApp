@@ -42,8 +42,8 @@ function App() {
                     //console.log("Accounts : ",accounts)//
                     //store.setData("account", accounts[0])
                     await setData(data => ({
-                        ...data, // Spread the previous car state
-                        account: accounts[0]  // Update the year to 2025
+                        ...data, 
+                        account: accounts[0]  
                     }));
                     //console.log(accounts);
 
@@ -55,12 +55,12 @@ function App() {
                         let tetherBalance = tether.methods.balanceOf(accounts[0]).call()
                         const balance = (await tetherBalance).toString()
                         setData(data => ({
-                            ...data, // Spread the previous car state
-                            tetherBalance: balance  // Update the year to 2025
+                            ...data,
+                            tetherBalance: balance
                         }));
                         setData(data => ({
-                            ...data, // Spread the previous car state
-                            tether: tether  // Update the year to 2025
+                            ...data,
+                            tether: tether
                         }));
                     } else {
                         window.alert("Tether token not deployed to the network.")
@@ -71,12 +71,12 @@ function App() {
                         let rwdBalance = rwd.methods.balanceOf(accounts[0]).call()
                         const balance = (await rwdBalance).toString()
                         setData(data => ({
-                            ...data, // Spread the previous car state
-                            rwdBalance: balance  // Update the year to 2025
+                            ...data, 
+                            rwdBalance: balance  
                         }));
                         setData(data => ({
-                            ...data, // Spread the previous car state
-                            rwd: rwd  // Update the year to 2025
+                            ...data, 
+                            rwd: rwd  
                         }));
                     } else {
                         window.alert("RWD token not deployed to the network.")
@@ -88,12 +88,12 @@ function App() {
                         let decentralBankBalance = decentralBank.methods.stakingBalance(accounts[0]).call()
                         const balance = (await decentralBankBalance).toString()
                         setData(data => ({
-                            ...data, // Spread the previous car state
-                            stakingBalance: balance  // Update the year to 2025
+                            ...data, 
+                            stakingBalance: balance
                         }));
                         setData(data => ({
-                            ...data, // Spread the previous car state
-                            decentralBank: decentralBank  // Update the year to 2025
+                            ...data, 
+                            decentralBank: decentralBank  
                         }));
                     } else {
                         window.alert("DecentralBank token not deployed to the network.")
@@ -115,7 +115,7 @@ function App() {
 
 
     //localStorage.setItem('sharedData', JSON.stringify(data));
-    console.log("Accounts data 3 : ", data.account)
+    console.log("Accounts data  : ", data.account)
     console.log("Accounts data tether : ", data.tetherBalance)
     console.log("Accounts data rwd : ", data.rwdBalance)
     console.log("Accounts data decentralBank : ", data.stakingBalance)
