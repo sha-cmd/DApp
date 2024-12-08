@@ -13,7 +13,7 @@ module.exports = async function (deployer, network, accounts) {
     await deployer.deploy(DecentralBank, rwd.address, tether.address);
     const decentralBank = await DecentralBank.deployed();
 
-    await rwd.transfer(decentralBank.address, '10000000000000000000');
+    await rwd.transfer(decentralBank.address, '0');
 
-    await tether.transfer(accounts[1], '10000000000000000000');
+    await tether.transfer(accounts[1], '0');
 };
