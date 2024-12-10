@@ -19,7 +19,7 @@ installer les dépendances.
 
 Paramétrer un custom network avec
 
-* NETWORK ID : 1337
+* NETWORK ID ou ID CHAIN : 1337
 * RPC SERVER HTTP://127.0.0.1:7545
 
 Utiliser l'addresse de test depuis ganache dans metamask en copier la clé secrète dans import an account in metamask.
@@ -54,7 +54,7 @@ Exécuter la commande
 
 ```
 truffle compile
-truffle migrate --reset
+truffle migrate --reset --compile-all
 ```
 
 * Copier la clé privé d'un compte virtuel de ganache.
